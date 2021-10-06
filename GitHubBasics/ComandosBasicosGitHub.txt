@@ -1,0 +1,22 @@
+Configuración base de Git:
+
+git config --global user.name "Nombre del usuario"
+git config --global user.email "profesorjim@gmail.com"
+git config --global credential.helper 'cache --timeout=36000'
+
+Clonar el respositorio desde GitHub a local
+
+git clone git@github.com:<nombredeusuario>/<nombrederepositorio>.git
+Ejemplo concreto: git clone git@github.com:profesorjim/progdaw-21-22.git
+
+---> Con este mecanismo de clonación, el repositorio queda configurado para actualizaciones vía SSH
+
+Actualiza el repositorio (desde local a GitHub)
+
+git add . --all
+git commit -m "actualizacion"
+git push origin main
+
+Actualiza el respositorio (desde GitHub a local)
+
+git pull
