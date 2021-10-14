@@ -1,4 +1,4 @@
-public class EjemploAndCondicionesAnidadas {
+public class EjemploAndCondicionesAnidadas2 {
   /* Este programa localiza números pares entre 10 y 20, ambos incluidos.
    * Las condiciones de búsqueda son que sea par (resto de la división entre 2 igual a 0) y que esté
    * 10 y 20
@@ -8,7 +8,7 @@ public class EjemploAndCondicionesAnidadas {
    
   public static void main (String[] args) {
     int x;
-    boolean error=false;
+    boolean error=true;
     
     System.out.print("Introduzca un entero: ");
     x = Integer.parseInt(System.console().readLine());
@@ -17,14 +17,9 @@ public class EjemploAndCondicionesAnidadas {
       if (x >= 10) {
         if (x <= 20) {
           System.out.println("Este es un número de los que buscamos, par entre 10 y 20");
-        } else {
-          error = true;
+          error = false;
         }
-      } else {
-        error = true;
-      }
-    } else {
-      error = true;
+      } 
     }
       
     if (error==true) {
