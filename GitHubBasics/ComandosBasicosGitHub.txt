@@ -42,3 +42,14 @@ la carpeta "home" de usuario. Los ficheros son:
 id_rsa --> contiene la clave privada
 id_rsa.pub ---> contiene la clave pública, que es la que hay que subir a
 GitHub
+
+
+En el caso de que nos llevemos la clave privada (fichero id_rsa) a otra
+máquina, con la idea de seguir utilizando las mismas credenciales, debemos
+indicarle al sistema que añada la clave privada al anillo de claves, es decir,
+que el agente ssh conzca de dicha clave:
+
+ssh-add ~/.ssh/id_rsa
+
+De esta forma no tendremos que generar una pareja de claves nueva, y
+reutilizaremos la existente.
