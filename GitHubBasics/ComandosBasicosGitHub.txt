@@ -16,6 +16,11 @@ Para clonar el respositorio vía https:
 
 git clone https://github.com/<nombredeusuario>/<nombrederepositorio>
 
+Si hubiéramos clonado el repositorio vía https y quisiéramos actualizarlo vía ssh, podemos
+cambiar la configuración de subida para que use ssh así:
+
+git remote set-url origin git@github.com:<nombredeusuario>/<nombrederepositorio>.git
+
 
 Actualiza el repositorio (desde local a GitHub)
 
