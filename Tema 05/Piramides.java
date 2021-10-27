@@ -37,5 +37,24 @@ public class Piramides {
       asteriscos = asteriscos +2;
     }
 
+    // pirámide hueca hacia arriba
+    System.out.println();
+    
+    asteriscos = 1;
+    for (int i=h-1; i>=0; i--) {
+      for (int j=0; j<i; j++) {
+        System.out.print(" ");
+      }
+      for (int j=0; j<asteriscos; j++) {
+        if ((j==0) ||  (j==asteriscos-1) || (i==0)) {
+          System.out.print("*");
+        } else {
+          System.out.print(" ");
+        }
+      }
+      System.out.println();
+      asteriscos = asteriscos +2;
+    }
+
   }
 }
