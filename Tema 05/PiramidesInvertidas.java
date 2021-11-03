@@ -1,16 +1,3 @@
-/*
- * 
- * 
- * 
- * 
- * java "%e"
- * 
- * lxterminal -e /bin/sh %c
- * 
- * 
- * 
- * */
-
 public class PiramidesInvertidas {
   public static void main (String[] args) {
     int altura1, altura2;
