@@ -1,3 +1,5 @@
+package probarPaquete;
+
 import libreriaArrays.ArraysBidimensionales;
 import libreriaArrays.ArraysUnidimensionales;
 
