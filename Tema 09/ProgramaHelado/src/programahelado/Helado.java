@@ -39,10 +39,72 @@ public class Helado {
     }
   }
   
+  public boolean chupar () {
+    if (this.cantidad > 0) {
+      this.cantidad--;
+      return true;
+    }
+    return false;
+  }
   
+  public boolean chupar (int c) {
+    if (this.cantidad-c >= 0) {
+      this.cantidad = this.cantidad-c;
+      return true;
+    }
+    return false;
+  }
   
+  public int cuantoQueda() {
+    return this.cantidad;
+  }
+  
+  public String toString() {
+    String resultado = "";
+    resultado = "--------------\n";
+    resultado = resultado + "Sabor: "+this.sabor+"\n";
+    resultado = resultado + "Cantidad: "+this.cantidad;
+    if (!this.azucar) {
+      resultado = resultado + "\nSin Azucar. ";
+    }
+    if (!this.gluten) {
+      resultado = resultado + "\nSin Gluten. ";
+    }
+    if (this.vegano) {
+      resultado = resultado + "\nVegano. ";
+    }
+    resultado = resultado + "\n##############\n";
+    
+    return resultado;
+  }
+  
+  public int compara (Helado h) {
+    if (this.cantidad == h.cantidad) {
+      return 0;
+    }
+    if (this.cantidad < h.cantidad) {
+      return -1;
+    }
+    return 1;
+  }
+  
+  /*
   public void ponerSabor (String saborNuevo) {
     this.sabor = saborNuevo;
   }
+  
+  public void ponerSabor (int x) {
+    switch (x) {
+      case 1:
+        this.sabor = "manzana";
+        break;
+      case 2:
+        this.sabor = "melocotón";
+        break;
+      default:
+        this.sabor = "vainilla";
+    }
+  }
+  */
   
 }
