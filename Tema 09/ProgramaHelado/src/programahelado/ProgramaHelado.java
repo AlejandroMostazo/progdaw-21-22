@@ -32,6 +32,9 @@ public class ProgramaHelado {
       System.out.print("El primer helado es el más grande");
     }
     
+    System.out.println();
+    System.out.println("Hasta el momento se han creado "+ Helado.heladosCreados() +" helados.");
+    
     
   }
 }

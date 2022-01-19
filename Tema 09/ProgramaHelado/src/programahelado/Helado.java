@@ -6,6 +6,8 @@ public class Helado {
   private boolean azucar;
   private boolean gluten;
   private boolean vegano;
+  private static String conservante="Conservante1";
+  private static int totalHelados = 0;
   
   public Helado () {
     this("chocolate",10);
@@ -17,7 +19,9 @@ public class Helado {
     
     this.azucar = true;
     this.gluten = true;
-    this.vegano = false;    
+    this.vegano = false;  
+    
+    totalHelados++;
   }
   
   public Helado (String sabor, int cantidad, String a, String g, String v) {
@@ -86,6 +90,14 @@ public class Helado {
       return -1;
     }
     return 1;
+  }
+  
+  public static int heladosCreados() {
+    return totalHelados;
+  }
+  
+  public static void fijarConservante (String c) {
+    conservante = c;
   }
   
   /*
