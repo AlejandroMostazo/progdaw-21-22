@@ -10,11 +10,11 @@ package mobiliario;
  * @author usuario
  */
 public abstract class Mueble {
-  private String material;
+  private Materiales material;
   private int peso;
   private String color;
   
-  public Mueble (String m, int p, String c) {
+  public Mueble (Materiales m, int p, String c) {
     this.material = m;
     this.peso = p;
     this.color = c;

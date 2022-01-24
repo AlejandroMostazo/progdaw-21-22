@@ -36,7 +36,19 @@ public class Mobiliario {
     for (int i=0; i<10; i++) {
       System.out.println(conjunto[i]);
     }
-       
+    
+    
+    Armario objetoModificable = new Armario("PVC",100,"blanco",3);
+    Mesa objetoModificable2 = new Mesa("cristal",23,"transparente", 33);
+    
+    objetoModificable.duplicar();
+    objetoModificable2.duplicar();
+    
+    objetoModificable.pintar("rosa");
+    
+    System.out.println(objetoModificable);
+    System.out.println(objetoModificable2);
+      
   
   }
   
